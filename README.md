@@ -7,16 +7,16 @@ In this Blog , I am going to introduce to you the uses of the c++ STL. I assume 
 ### **2.Requirements**
 
 Some tools are of need for you to actually pursue this tutorial and this includes the following:
-✅A c++ Compiler and debugger(❌ obligatory) click here if you don’t have one
-✅A c++ IDE(not necessary you can use any text editor and run your code in terminal)click here if you don’t have one
+->✅A c++ Compiler and debugger(❌ obligatory) click here if you don’t have one
+->✅A c++ IDE(not necessary you can use any text editor and run your code in terminal)click here if you don’t have one
 
 ### **3.NOTES SYMBOLS:**
 
->   I will use some symbols to specify the importance of the current section or the use of it, here they are:
->         ❌   when you see this symbol, critical information that you best do not miss is to come so be aware 
->          ❗   this one means important information that is to come
->            💾     this one means that the section below is code
-> 
+->   I will use some symbols to specify the importance of the current section or the use of it, here they are:
+->         ❌   when you see this symbol, critical information that you best do not miss is to come so be aware 
+->          ❗   this one means important information that is to come
+->            💾     this one means that the section below is code
+-> 
 ### **4.What is the STL**
 The Standard Template Library (STL) is a set of C++ template classes to provide common programming data structures and functions such as lists, stacks, arrays, etc. It is a library of container classes, algorithms, and iterators. It is a generalized library and so, its components are parameterized. A working knowledge of template classes is a prerequisite for working with STL.
 
