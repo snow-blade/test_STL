@@ -205,7 +205,7 @@ _The pair container is a simple container defined in <utility> header consisting
 **Syntax :**
 
 ` pair (data_type1, data_type2) Pair_name;`
-[source](https://github.com/juju-e/test_STL/blob/master/pair1)
+[source](https://github.com/juju-e/test_STL/blob/master/pair1.cpp)
 [ We can also initialize a pair.](https://github.com/juju-e/test_STL/blob/master/pair_init.cpp)
 Syntax :
 
