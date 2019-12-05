@@ -35,7 +35,7 @@ So then let’s get started everyone.
 > Imagine it this way: you have a series of boxes connected together. Once all these boxes are used up, you would usually transfer all your things to a new, larger box. But not with vectors!_
 
 ### **std::vector methods**
-### **[vector  Iterator methods:](https://github.com/juju-e/test_STL/test.cpp)**
+### **[vector  Iterator methods:](https://github.com/juju-e/test_STL/blob/master/test.cpp)**
 
 - > begin() – Returns an iterator pointing to the first element in the vector 
 - > end() – Returns an iterator pointing to the theoretical element that follows the last element in the vector 
@@ -47,17 +47,17 @@ So then let’s get started everyone.
 - > crend() – Returns a constant reverse iterator pointing to the theoretical element preceding the first element in the vector (considered as reverse end) 
 - > 
 
-### **[c++ vector capacity methods](https://github.com/juju-e/test_STL/capacity.cpp)**
+### **[c++ vector capacity methods](https://github.com/juju-e/test_STL/blob/master/capacity.cpp)**
 
 - > size() – Returns the number of elements in the vector. 
 - > max_size() – Returns the maximum number of elements that the vector can hold. 
 - > capacity() – Returns the size of the storage space currently allocated to the vector expressed as number of elements. 
 - > resize(n) – Resizes the container so that it contains ‘n’ elements.        
-- > ![alt-text](https://github.com/juju-e/test_STL/pic/resize.png"hover")
+- > ![alt-text](https://github.com/juju-e/test_STL/blob/master/pic/resize.png"hover")
 - > empty() – Returns whether the container is empty. 
 - > shrink_to_fit() – Reduces the capacity of the container to fit its size and destroys all elements beyond the capacity. 
 - > reserve() – Requests that the vector capacity be at least enough to contain n elements.
-- >  ### **[c++ vector element access methods](https://github.com/juju-e/test_STL/access.cpp)**
+- >  ### **[c++ vector element access methods](https://github.com/juju-e/test_STL/blob/master/access.cpp)**
 - > reference operator [g] – Returns a reference to the element at position ‘g’ in the vector 
 - > at(g) – Returns a reference to the element at position ‘g’ in the vector 
 - > front() – Returns a reference to the first element in the vector 
@@ -65,13 +65,13 @@ So then let’s get started everyone.
 - > data() – Returns a direct pointer to the memory array used internally by the vector to store its owned elements. 
 - > 
 
- ### **[c++ vector Modifiers methods](https://github.com/juju-e/test_STL/modifiers.cpp)**
+ ### **[c++ vector Modifiers methods](https://github.com/juju-e/test_STL/blob/master/modifiers.cpp)**
 
 - > assign() – It assigns new value to the vector elements by replacing old ones 
 - > push_back() – It push the elements into a vector from the back 
-- > ![alt-text](https://github.com/juju-e/test_STL/pic/pub.png"push-back")
+- > ![alt-text](https://github.com/juju-e/test_STL/blob/master/pic/pub.png"push-back")
 - > pop_back() – It is used to pop or remove elements from a vector from the back.      
-- > ![alt-text](https://github.com/juju-e/test_STL/pic/pob.png"pop-back")
+- > ![alt-text](https://github.com/juju-e/test_STL/blob/master/pic/pob.png"pop-back")
 - > insert() – It inserts new elements before the element at the specified position 
 - > erase() – It is used to remove elements from a container from the specified position or range. 
 - > swap() – It is used to swap the contents of one vector with another vector of same type. Sizes may differ. 
@@ -123,11 +123,11 @@ Next we have  std::list which introduces the core concepts of a c++ list,
 ### **◾ Std::map**
 _Maps are associative containers that store elements in a mapped fashion. Each element has a key value and a mapped value. No two mapped values can have same key values.
 You can think of it as shows this visual representation:
-![alt-text](https://github.com/juju-e/test_STL/pic/map.png"map representation")
+![alt-text](https://github.com/juju-e/test_STL/blob/master/pic/map.png"map representation")
 in this representation apple is the key and banana is the value.
 The basic syntax to initialize a c++ map is the following:_
- ![alt-text](https://github.com/juju-e/test_STL/pic/map2.png"map representation")
-### **[Some basic functions associated with Map:](https://github.com/juju-e/test_STL/map.cpp)**
+ ![alt-text](https://github.com/juju-e/test_STL/blob/master/pic/map2.png"map representation")
+### **[Some basic functions associated with Map:](https://github.com/juju-e/test_STL/blob/master/map.cpp)**
 
 - > map insert() in C++ STL– Insert elements with a particular key in the map container. . 
 - >     • map count() function in C++ STL– Returns the number of matches to element with key value ‘g’ in the map. 
@@ -159,7 +159,7 @@ The basic syntax to initialize a c++ map is the following:_
 
 Sets are a type of associative containers in which each element has to be unique, because the value of the element identifies it. The value of the element cannot be modified once it is added to the set, though it is possible to remove and add the modified value of that element.
 
-[Methods of set: ](https://github.com/juju-e/test_STL/set.cpp)
+[Methods of set: ](https://github.com/juju-e/test_STL/blob/master/set.cpp)
 
 - > 
 - >     • begin() – Returns an iterator to the first element in the set. 
@@ -205,8 +205,8 @@ _The pair container is a simple container defined in <utility> header consisting
 **Syntax :**
 
 ` pair (data_type1, data_type2) Pair_name;`
-[source](https://github.com/juju-e/test_STL/pair1)
-[ We can also initialize a pair.](https://github.com/juju-e/test_STL/pair_init.cpp)
+[source](https://github.com/juju-e/test_STL/blob/master/pair1)
+[ We can also initialize a pair.](https://github.com/juju-e/test_STL/blob/master/pair_init.cpp)
 Syntax :
 
 `pair (data_type1, data_type2) Pair_name (value1, value2) ;`
@@ -223,9 +223,9 @@ pair  g4(g3);    //copy of g3
 Another way to initialize a pair is by using the make_pair() function.
 `
 g2 = make_pair(1, 'a');`
-[source-code](https://github.com/juju-e/test_STL/pair2.cpp)
+[source-code](https://github.com/juju-e/test_STL/blob/master/pair2.cpp)
 
-> ❗If not initialized, the first value of the pair gets [automatically initialized.](https://github.com/juju-e/test_STL/pair_auto_init.cpp)
+> ❗If not initialized, the first value of the pair gets [automatically initialized.](https://github.com/juju-e/test_STL/blob/master/pair_auto_init.cpp)
 
 
 ###  **_STL interesting facts:_**
@@ -289,7 +289,7 @@ int main()
 
 ```
 Let’s dig in deeper and understand how this can actually be used in conjunction with STLs.
-Thus,[here](https://github.com/juju-e/test_STL/functors.cpp), Increment is a functor, a c++ class that acts as a function.
+Thus,[here](https://github.com/juju-e/test_STL/blob/master/functors.cpp), Increment is a functor, a c++ class that acts as a function.
 The line,
 `transform(arr, arr+n, arr, increment(to_add));`
 is the same as writing below two lines,
