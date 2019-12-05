@@ -53,7 +53,7 @@ So then let’s get started everyone.
 - > max_size() – Returns the maximum number of elements that the vector can hold. 
 - > capacity() – Returns the size of the storage space currently allocated to the vector expressed as number of elements. 
 - > resize(n) – Resizes the container so that it contains ‘n’ elements.        
-- > ![alt-text](https://github.com/juju-e/test_STL/blob/master/pic/resize.png"hover")
+- > !["resize"](https://github.com/juju-e/test_STL/blob/master/pic/resize.png)
 - > empty() – Returns whether the container is empty. 
 - > shrink_to_fit() – Reduces the capacity of the container to fit its size and destroys all elements beyond the capacity. 
 - > reserve() – Requests that the vector capacity be at least enough to contain n elements.
@@ -69,9 +69,9 @@ So then let’s get started everyone.
 
 - > assign() – It assigns new value to the vector elements by replacing old ones 
 - > push_back() – It push the elements into a vector from the back 
-- > ![alt-text](https://github.com/juju-e/test_STL/blob/master/pic/pub.png"push-back")
+- > !["push-back"](https://github.com/juju-e/test_STL/blob/master/pic/pub.png)
 - > pop_back() – It is used to pop or remove elements from a vector from the back.      
-- > ![alt-text](https://github.com/juju-e/test_STL/blob/master/pic/pob.png"pop-back")
+- > !["pop-back"](https://github.com/juju-e/test_STL/blob/master/pic/pob.png)
 - > insert() – It inserts new elements before the element at the specified position 
 - > erase() – It is used to remove elements from a container from the specified position or range. 
 - > swap() – It is used to swap the contents of one vector with another vector of same type. Sizes may differ. 
@@ -123,10 +123,10 @@ Next we have  std::list which introduces the core concepts of a c++ list,
 ### **◾ Std::map**
 _Maps are associative containers that store elements in a mapped fashion. Each element has a key value and a mapped value. No two mapped values can have same key values.
 You can think of it as shows this visual representation:
-![alt-text](https://github.com/juju-e/test_STL/blob/master/pic/map.png"map representation")
+!["map representation"](https://github.com/juju-e/test_STL/blob/master/pic/map.png)
 in this representation apple is the key and banana is the value.
 The basic syntax to initialize a c++ map is the following:_
- ![alt-text](https://github.com/juju-e/test_STL/blob/master/pic/map2.png"map representation")
+ !["map representation"](https://github.com/juju-e/test_STL/blob/master/pic/map2.png)
 ### **[Some basic functions associated with Map:](https://github.com/juju-e/test_STL/blob/master/map.cpp)**
 
 - > map insert() in C++ STL– Insert elements with a particular key in the map container. . 
