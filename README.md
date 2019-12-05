@@ -57,7 +57,7 @@ So then let’s get started everyone.
 - > empty() – Returns whether the container is empty. 
 - > shrink_to_fit() – Reduces the capacity of the container to fit its size and destroys all elements beyond the capacity. 
 - > reserve() – Requests that the vector capacity be at least enough to contain n elements.
-- >  ### **[c++ vector capacity element access methods](https://github.com/juju-e/test_STL/access.cpp)**
+- >  ### **[c++ vector element access methods](https://github.com/juju-e/test_STL/access.cpp)**
 - > reference operator [g] – Returns a reference to the element at position ‘g’ in the vector 
 - > at(g) – Returns a reference to the element at position ‘g’ in the vector 
 - > front() – Returns a reference to the first element in the vector 
@@ -123,10 +123,10 @@ Next we have  std::list which introduces the core concepts of a c++ list,
 ### **◾ Std::map**
 _Maps are associative containers that store elements in a mapped fashion. Each element has a key value and a mapped value. No two mapped values can have same key values.
 You can think of it as shows this visual representation:
-![alt-text](https://github.com/juju-e/test_STL/pic/map2.png"push-back")
+![alt-text](https://github.com/juju-e/test_STL/pic/map.png"map representation")
 in this representation apple is the key and banana is the value.
 The basic syntax to initialize a c++ map is the following:_
- ![alt-text](https://github.com/juju-e/test_STL/pic/map2.png"push-back")
+ ![alt-text](https://github.com/juju-e/test_STL/pic/map2.png"map representation")
 ### **[Some basic functions associated with Map:](https://github.com/juju-e/test_STL/map.cpp)**
 
 - > map insert() in C++ STL– Insert elements with a particular key in the map container. . 
@@ -304,3 +304,9 @@ is the same as writing below two lines,
 
 ```
 Thus, an object a is created that overloads the operator(). Hence, functors can be used effectively in conjunction with C++ STLs.
+
+#############################################################################################
+#
+# THAT'S THE END OF THIS TUTORIAL, HAPPY CODING..
+#
+############################################################################################
