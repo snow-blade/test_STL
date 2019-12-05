@@ -54,24 +54,24 @@ resize(n) – Resizes the container so that it contains ‘n’ elements.
 empty() – Returns whether the container is empty. 
 shrink_to_fit() – Reduces the capacity of the container to fit its size and destroys all elements beyond the capacity. 
 reserve() – Requests that the vector capacity be at least enough to contain n elements.
- ### **[c++ vector capacity element access methods](https://github.com/juju-e/test_STL/access.cpp)**
-reference operator [g] – Returns a reference to the element at position ‘g’ in the vector 
-at(g) – Returns a reference to the element at position ‘g’ in the vector 
-front() – Returns a reference to the first element in the vector 
-back() – Returns a reference to the last element in the vector 
-data() – Returns a direct pointer to the memory array used internally by the vector to store its owned elements. 
- ### **[c++ vector Modifiers methods](https://github.com/juju-e/test_STL/modifiers.cpp)**
-assign() – It assigns new value to the vector elements by replacing old ones 
-push_back() – It push the elements into a vector from the back 
-![alt-text](https://github.com/juju-e/test_STL/pic/pub.png"push-back")
-pop_back() – It is used to pop or remove elements from a vector from the back.      
-![alt-text](https://github.com/juju-e/test_STL/pic/pob.png"pop-back")
-insert() – It inserts new elements before the element at the specified position 
-erase() – It is used to remove elements from a container from the specified position or range. 
-swap() – It is used to swap the contents of one vector with another vector of same type. Sizes may differ. 
-clear() – It is used to remove all the elements of the vector container 
-emplace() – It extends the container by inserting new element at position 
-emplace_back() – It is used to insert a new element into the vector container, the new element is added to the end of the vector.
+ ### **[c++ vector element access methods](https://github.com/juju-e/test_STL/access.cpp)**
+reference operator [g] – Returns a reference to the element at position ‘g’ in the vector,
+at(g) – Returns a reference to the element at position ‘g’ in the vector ,
+front() – Returns a reference to the first element in the vector ,
+back() – Returns a reference to the last element in the vector ,
+data() – Returns a direct pointer to the memory array used internally by the vector to store its owned elements,
+ ### **[c++ vector Modifiers methods](https://github.com/juju-e/test_STL/modifiers.cpp)**,
+assign() – It assigns new value to the vector elements by replacing old ones ,
+push_back() – It push the elements into a vector from the back ,
+![alt-text](https://github.com/juju-e/test_STL/pic/pub.png"push-back"),
+pop_back() – It is used to pop or remove elements from a vector from the back,     
+![alt-text](https://github.com/juju-e/test_STL/pic/pob.png"pop-back"),
+insert() – It inserts new elements before the element at the specified position ,
+erase() – It is used to remove elements from a container from the specified position or range. ,
+swap() – It is used to swap the contents of one vector with another vector of same type. Sizes may differ. ,
+clear() – It is used to remove all the elements of the vector container,
+emplace() – It extends the container by inserting new element at position ,
+emplace_back() – It is used to insert a new element into the vector container, the new element is added to the end of the vector,
 
 
 _This is not the complete list of all functions because there are plenty of them I just did a list of those that I have personally used in my projects, personally std::vector is the best dynamic container that I have ever used in c++, it’s ease to use, fast traversal and the storage mechanics make it an even better choice for a beginner competitive programmer._
@@ -80,36 +80,36 @@ Next we have  std::list which introduces the core concepts of a c++ list,
 
  _❗Lists are sequence containers that allow non-contiguous memory allocation. As compared to vector, list has slow traversal, but once a position has been found, insertion and deletion are quick. Normally, when we say a List, we talk about doubly linked list if you’ve well pursued my lesson about c++ std::vector STL you won’t have any difficulty grasping the concepts of a c++ std::list. For implementing a singly linked list, we use forward list which I will introduce in a later lesson._
 ###  **Here are some common std::list methods:**
-    • front() – Returns the value of the first element in the list. 
-    • back() – Returns the value of the last element in the list . 
-    • push_front(g) – Adds a new element ‘g’ at the beginning of the list . 
-    • push_back(g) – Adds a new element ‘g’ at the end of the list. 
-    • pop_front() – Removes the first element of the list, and reduces size of the list by 1. 
-    • pop_back() – Removes the last element of the list, and reduces size of the list by 1 
-    • list::begin() and list::end() in C++ STL– begin() function returns an iterator pointing to the first element of the list 
-    • end()– end() function returns an iterator pointing to the theoretical last element which follows the last element. 
-    • list rbegin() and rend() function in C++ STL– rbegin() returns a reverse iterator which points to the last element of the list. rend() returns a reverse iterator which points to the position before the beginning of the list. 
-    • list cbegin() and cend() function in C++ STL– cbegin() returns a constant random access iterator which points to the beginning of the list. cend() returns a constant random access iterator which points to the end of the list. 
-    • list crbegin() and crend() function in C++ STL– crbegin() returns a constant reverse iterator which points to the last element of the list i.e reversed beginning of container. crend() returns a constant reverse iterator which points to the theoretical element preceding the first element in the list i.e. the reverse end of the list. 
-    • empty() – Returns whether the list is empty(1) or not(0). 
-    • insert() – Inserts new elements in the list before the element at a specified position. 
-    • erase() – Removes a single element or a range of elements from the list. 
-    • assign() – Assigns new elements to list by replacing current elements and resizes the list. 
-    • remove() – Removes all the elements from the list, which are equal to given element. 
-    • list::remove_if() in C++ STL– Used to remove all the values from the list that correspond true to the predicate or condition given as parameter to the function. 
-    • reverse() – Reverses the list. 
-    • size() – Returns the number of elements in the list. 
-    • list resize()function in C++ STL– Used to resize a list container. 
-    • sort() – Sorts the list in increasing order. 
-    • list max_size() function in C++ STL– Returns the maximum number of elements a list container can hold. 
-    • list unique() in C++ STL– Removes all duplicate consecutive elements from the list. 
-    • list::emplace_front() and list::emplace_back() in C++ STL– emplace_front() function is used to insert a new element into the list container, the new element is added to the beginning of the list. emplace_back() function is used to insert a new element into the list container, the new element is added to the end of the list. 
-    • list::clear() in C++ STL– clear() function is used to remove all the elements of the list container, thus making it size 0. 
-    • list::operator= in C++ STL– This operator is used to assign new contents to the container by replacing the existing contents. 
-    • list::swap() in C++ STL– This function is used to swap the contents of one list with another list of same type and size. 
-    • list splice() function in C++ STL– Used to transfer elements from one list to another. 
-    • list merge() function in C++ STL– Merges two sorted lists into one 
-    • list emplace() function in C++ STL– Extends list by inserting new element at a given position. 
+ front() – Returns the value of the first element in the list. 
+ back() – Returns the value of the last element in the list . 
+ push_front(g) – Adds a new element ‘g’ at the beginning of the list . 
+ push_back(g) – Adds a new element ‘g’ at the end of the list. 
+ pop_front() – Removes the first element of the list, and reduces size of the list by 1. 
+ pop_back() – Removes the last element of the list, and reduces size of the list by 1 
+ list::begin() and list::end() in C++ STL– begin() function returns an iterator pointing to the first element of the list 
+ end()– end() function returns an iterator pointing to the theoretical last element which follows the last element. 
+ list rbegin() and rend() function in C++ STL– rbegin() returns a reverse iterator which points to the last element of the list. rend() returns a reverse iterator which points to the position before the beginning of the list. 
+list cbegin() and cend() function in C++ STL– cbegin() returns a constant random access iterator which points to the beginning of the list. cend() returns a constant random access iterator which points to the end of the list. 
+list crbegin() and crend() function in C++ STL– crbegin() returns a constant reverse iterator which points to the last element of the list i.e reversed beginning of container. crend() returns a constant reverse iterator which points to the theoretical element preceding the first element in the list i.e. the reverse end of the list. 
+empty() – Returns whether the list is empty(1) or not(0). 
+insert() – Inserts new elements in the list before the element at a specified position. 
+erase() – Removes a single element or a range of elements from the list. 
+assign() – Assigns new elements to list by replacing current elements and resizes the list. 
+remove() – Removes all the elements from the list, which are equal to given element. 
+list::remove_if() in C++ STL– Used to remove all the values from the list that correspond true to the predicate or condition given as parameter to the function. 
+reverse() – Reverses the list. 
+size() – Returns the number of elements in the list. 
+list resize()function in C++ STL– Used to resize a list container. 
+sort() – Sorts the list in increasing order. 
+list max_size() function in C++ STL– Returns the maximum number of elements a list container can hold. 
+list unique() in C++ STL– Removes all duplicate consecutive elements from the list. 
+list::emplace_front() and list::emplace_back() in C++ STL– emplace_front() function is used to insert a new element into the list container, the new element is added to the beginning of the list. emplace_back() function is used to insert a new element into the list container, the new element is added to the end of the list. 
+list::clear() in C++ STL– clear() function is used to remove all the elements of the list container, thus making it size 0. 
+list::operator= in C++ STL– This operator is used to assign new contents to the container by replacing the existing contents. 
+list::swap() in C++ STL– This function is used to swap the contents of one list with another list of same type and size. 
+list splice() function in C++ STL– Used to transfer elements from one list to another. 
+list merge() function in C++ STL– Merges two sorted lists into one 
+lst emplace() function in C++ STL– Extends list by inserting new element at a given position. 
 
 ❌  most of std::list methods just work like std::vector's except some
 > _❗   The biggest improvement that std::list can provide is when you're moving one or more elements from the middle of one list into another list. This splice operation is extremely efficient on list while it may involve allocation and movement of items in random access containers such as vector._
@@ -181,13 +181,13 @@ Sets are a type of associative containers in which each element has to be unique
 
 _The pair container is a simple container defined in <utility> header consisting of two data elements or objects._ 
 
-> 
-> 
->     The first element is referenced as ‘first’ and the second element as ‘second’ and the order is fixed (first, second).
->     Pair is used to combine together two values which may be different in type. Pair provides a way to store two heterogeneous objects as a single unit.
->     Pair can be assigned, copied and compared. The array of objects allocated in a map or hash_map are of type ‘pair’ by default in which all the ‘first’ elements are unique keys associated with their ‘second’ value objects.
->     To access the elements, we use variable name followed by dot operator followed by the keyword first or second.
-> 
+
+ 
+     The first element is referenced as ‘first’ and the second element as ‘second’ and the order is fixed (first, second).
+     Pair is used to combine together two values which may be different in type. Pair provides a way to store two heterogeneous objects as    a single unit.
+   Pair can be assigned, copied and compared. The array of objects allocated in a map or hash_map are of type ‘pair’ by default in which all the ‘first’ elements are unique keys associated with their ‘second’ value objects.
+     To access the elements, we use variable name followed by dot operator followed by the keyword first or second.
+ 
 **Syntax :**
 
 ` pair (data_type1, data_type2) Pair_name;`
