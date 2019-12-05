@@ -7,8 +7,8 @@ In this Blog , I am going to introduce to you the uses of the c++ STL. I assume 
 ### **2.Requirements**
 
 Some tools are of need for you to actually pursue this tutorial and this includes the following:
-- >✅A c++ Compiler and debugger(❌ obligatory) click here if you don’t have one
-- >✅A c++ IDE(not necessary you can use any text editor and run your code in terminal)click here if you don’t have one
+- >✅A c++ Compiler and debugger(❌ obligatory) click [here](http://tdm-gcc.tdragon.net/download) if you don’t have one
+- >✅A c++ IDE(not necessary you can use any text editor and run your code in terminal)click [here](http://www.codeblocks.org/downloads) if you don’t have one
 
 ### **3.NOTES SYMBOLS:**
 
