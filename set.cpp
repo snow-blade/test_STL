@@ -1,6 +1,4 @@
-#include <iostream>
-#include <set>
-#include <iterator>
+#include <bits/stdc++.h>
 
 using namespace std;
 
